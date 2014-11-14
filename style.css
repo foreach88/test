@@ -1,0 +1,86 @@
+html,
+body{
+	height:100%;
+	margin:0;
+	overflow:auto;
+}
+.sayHello{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.hello{
+	width:100%;
+	height:100%;
+	background:orange;
+	opacity:0.8;
+}
+.sayHello form{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-50px 0 0 -150px;
+	width:300px;
+	min-height:100px;
+	background:#fff;
+	border-radius:5px;
+}
+.sayHello h1{
+	margin-top:0;
+	padding-left:5px;
+	font-size:1.2em;
+	background:red;
+	border-radius:5px 5px 0 0;
+}
+.sayHello span{
+	display:block;
+	margin-left:25px;
+	
+}
+.sayHello button{
+	display:block;
+	margin:10px auto;
+}
+#grid{
+	display:table;
+	width:674px;
+	margin:50px auto 0;
+	background:url('images/grid.png');
+}
+#grid .row{
+	display:table-row;
+}
+#grid > *{
+	height:280px;
+}
+#grid > *:first-child{
+	height:210px;
+}
+#grid > *:last-child{
+	height:183px;
+}
+#grid .cell{
+	display:table-cell;
+	height:inherit;
+	width:300px;
+	cursor:pointer;
+	text-align:center;
+	vertical-align:middle;
+}
+#grid .row > *:first-child{
+	width:30%;
+}
+#grid .row > *:last-child{
+	width:29%;
+}
+.level{
+	display:none;
+}
+.end{
+	display:none;
+}
+#grid img{
+	opacity:0;
+}

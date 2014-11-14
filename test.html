@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="sayHello">
+		<div class="hello"></div>
+		<form class="level">
+			<h1>Выбор уровня сложности</h1>
+			<span><input type="radio" name="choice" id="easy" /> <label for="easy">Простой</label></span>
+			<span><input type="radio" name="choice" id="normal" checked /> <label for="normal">Средний</label></span>
+			<span><input type="radio" name="choice" id="difficult" /> <label for="difficult">Сложный</label></span>
+			<button id="level">ОК</button>
+		</form>
+		<form class="choice">
+			<h1>Чем будем играть?</h1>
+			<span><input type="radio" name="choice" id="tics" checked /> <label for="tics">Крестики (первый ход)</label></span>
+			<span><input type="radio" name="choice" id="toes" /> <label for="toes">Нолики</label></span>
+			<button id="choice">ОК</button>
+		</form>
+		<form class="end"></form>
+	</div>
+	<div id="grid">
+		<div class="row top">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+		<div class="row middle">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+		<div class="row bottom">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
